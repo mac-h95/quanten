@@ -1,0 +1,129 @@
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .button-blue {
+      background: #0099cc;
+      border-color: #0099cc;
+    }
+
+    .button-blue.button-outline {
+      color: #0099cc;
+    }
+
+
+    header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      z-index: 1;
+    }
+
+    header svg {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    header #close {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 3rem 1rem;
+    }
+
+    header img,
+    header svg {
+      cursor: pointer;
+    }
+
+    header img {
+      width: 30px;
+      height: 30px;
+    }
+
+    header nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 8rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+
+    header nav a {
+      color: #0099cc;
+      font-size: 2.3rem;
+      margin: 0 .5rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .space-above {
+      margin-top: 10rem;
+    }
+
+    .game {
+      position: relative;
+      width: 250px;
+      height: 150px;
+      text-align: center;
+    }
+
+    .game img {
+      width: 250px;
+      height: 150px;
+      border-radius: 2rem;
+    }
+
+    .game:hover .game__info {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+
+    .post {
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      margin: 1rem 0;
+      transition: box-shadow .5s;
+    }
+
+    /*on hover increase shadow size & darkness transition smoothly*/
+    .post:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+      transition: box-shadow .5s;
+    }
+
+    .post p,
+    .post span,
+    .post h2 {
+      margin: 0;
+    }
+
+
+
+    @media(min-width: 40rem) {
+      header {
+        justify-content: space-between;
+        padding: 3rem 5rem;
+      }
+
+      header nav {
+        width: 20%;
+      }
+    }

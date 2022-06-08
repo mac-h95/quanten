@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Quanten are a new game studio, looking to build creative games that are fun to play." />
+  <meta property="og:title" content="Quanten Game Studio" />
+  <meta property="og:description"
+    content="Quanten are a new game studio, looking to build creative games that are fun to play." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mac-h95.github.io/quanten" />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0099cc" />
+  <link rel="icon" href="./assets/icon.png" />
+  <link rel="canonical" href="" />
+  <link rel="stylesheet" href="./global.css" />
+  <title>Quanten Game Studio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap" rel="stylesheet">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <!-- Alpine JS -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img onclick="window.location.href = '/'" src='assets/icon.png' alt="logo" />
+    <div class="nav__container" x-data="{open: false}">
+      <svg @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+      <nav x-show="open" x-transition:enter="slide-in" @click.outside="open = false">
+        <svg id="close" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+        <a href="/games">Games</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="column center space-above">
+        <h1>Quanten Game Studio</h1>
+        <p>A new game studio, looking to build creative games that are fun to play.</p>
+        <div class="button-group">
+          <button class="button-blue" onclick="window.location.href= '/games'">Our Games</button>
+          <button class="button-blue button-outline" onclick="window.location.href='/blog'">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
