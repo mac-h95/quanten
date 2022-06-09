@@ -119,11 +119,18 @@
 
     @media(min-width: 40rem) {
       header {
-        justify-content: space-between;
-        padding: 3rem 5rem;
+        padding: 3rem 4rem;
       }
 
       header nav {
         width: 20%;
       }
+    }
+
+    @media(min-width:  80rem) {
+    	padding: 3rem 8rem; 
+    }
+
+    @media(min-width: 120rem) {
+    	padding: 3rem 12rem
     }
